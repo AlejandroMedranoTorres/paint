@@ -28,30 +28,12 @@ def circulo(start, end):
     circle(radio)
     end_fill()
 
-def rectangle(start,end):
+def rectangle(start, end):
     "Draw rectangle from start to end."
-    up()
-    goto(start.x, start.y)
-    begin_fill()
-    down()
-    goto(start.x, end.y)
-    goto(end.x, end.y)
-    goto(end.x, start.y)
-    goto(start.x, start.y)
-    end_fill()
     pass  # TODO
 
 def triangle(start, end):
     "Draw triangle from start to end."
-    up()
-    goto(start.x, start.y)
-    begin_fill()
-    down()
-    goto(end.x, end.y)
-    goto(end.x*2,start.y)
-    goto(start.x, start.y)
-    end_fill()
-    
     pass  # TODO
 
 def tap(x, y):
@@ -87,3 +69,4 @@ onkey(lambda: store('shape', circulo), 'c')
 onkey(lambda: store('shape', rectangle), 'r')
 onkey(lambda: store('shape', triangle), 't')
 done()
+
