@@ -69,3 +69,4 @@ onkey(lambda: store('shape', circulo), 'c')
 onkey(lambda: store('shape', rectangle), 'r')
 onkey(lambda: store('shape', triangle), 't')
 done()
+
