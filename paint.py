@@ -30,6 +30,7 @@ def circulo(start, end):
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
+    up()
     pass  # TODO
 
 def triangle(start, end):
