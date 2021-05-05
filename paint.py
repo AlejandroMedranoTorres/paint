@@ -21,16 +21,30 @@ def square(start, end):
 
     end_fill()
 
-def circulo(start, end):
-    "Draw circle from start to end."
-    radio = end.x - start.x
-    begin_fill()
-    circle(radio)
-    end_fill()
-
-def rectangle(start, end):
+def rectangle(start,end):
     "Draw rectangle from start to end."
     up()
+    goto(start.x, start.y)
+    begin_fill()
+    down()
+    goto(start.x, end.y)
+    goto(end.x, end.y)
+    goto(end.x, start.y)
+    goto(start.x, start.y)
+    end_fill()
+    pass  # TODO
+
+def triangle(start, end):
+    "Draw triangle from start to end."
+    up()
+    goto(start.x, start.y)
+    begin_fill()
+    down()
+    goto(end.x, end.y)
+    goto(end.x*2,start.y)
+    goto(start.x, start.y)
+    end_fill()
+
     pass  # TODO
 
 def triangle(start, end):
